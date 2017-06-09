@@ -42,7 +42,6 @@ MAIL_ENCRYPTION=null
         echo 'Create Env'
         sh 'php artisan key:generate'
         sh 'composer dump-autoload'
-        sh 'php artisan migrate:refresh --seed'
       }
     }
   }
