@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('Install') {
       steps {
-        sh 'composer install'
+        sh 'composer update'
       }
     }
     stage('Test Laravel') {
       steps {
         sh '''composer require phpunit/phpunit --dev 
-composer global install phpunit/phpu'''
+composer global install phpunit/phpunit'''
       }
     }
   }
