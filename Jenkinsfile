@@ -43,7 +43,7 @@ MAIL_ENCRYPTION=null
         sh 'php artisan key:generate'
         sh 'composer dump-autoload'
         sh './vendor/bin/phpunit '
-        sh './vendor/bin/phpcbf app/ '
+        sh 'composer require behat/behat behat/mink behat/mink-extension laracasts/behat-laravel-extension --dev'
       }
     }
   }
